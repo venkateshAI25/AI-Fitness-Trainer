@@ -4,7 +4,7 @@ from blueprints.biceps import biceps_bp
 from blueprints.squats import squats_bp
 from blueprints.diet import diet_bp
 
-app = Flask(__name__, template_folder='templates')
+main = Flask(__name__, template_folder='templates')
 
 # Registering blueprints
 app.register_blueprint(pushups_bp, url_prefix="/blueprints/pushups")
